@@ -1,0 +1,4 @@
+#Basic code to get details of a particular file
+
+last_update=$(stat -c "%n %y" filename) ; echo "${last_update%.*}"
+
